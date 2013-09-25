@@ -1,0 +1,483 @@
+/* Max's CSS 2013 */
+body {
+    font-family: 'Noto Sans', 'Helvetica Neue', Verdana, arial;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: url(http://i.imgur.com/c54mjfM.jpg) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+/* Noscript alert box styling */
+#noscriptWarning {
+    background-color: #eec6c6;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid red;
+}
+#noscriptWarning p {
+    margin-top: 0px;
+}
+#noscriptWarning img {
+    float: right;
+}
+#noscriptWarning h1 {
+    display: inline-block;
+}
+/* Gives last paragraph a bit of space at the bottom */
+#lastParagraph {
+    margin-bottom: 15px;
+}
+.updates p {
+    margin: 0px;
+    display: inline-block;
+}
+/* A large, very fancy, button */
+.fancybutton {
+    width: 50%;
+    background-color: #c0c0c0;
+    display: block;
+    text-decoration: none;
+    font-size: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    color: black;
+    -moz-text-shadow: 1px 1px 1px gray;
+    -webkit-text-shadow: 1px 1px 1px gray;
+    text-shadow: 1px 1px 1px gray;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    padding-left: 1%;
+    border-radius: 10px;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    -moz-transition-property: background-color;
+    -moz-transition-duration: 1s;
+    -moz-transition-timing-function: ease;
+    -webkit-transition-property: background-color;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: ease;
+    -ms-transition-property: background-color;
+    -ms-transition-duration: 1s;
+    -ms-transition-timing-function: ease;
+}
+.fancybutton:hover {
+    background-color: #8da7d1;
+}
+/* Wrapper to help with footer push */
+#wrapper {
+    min-height: 100%;
+    margin-bottom: 150px;
+}
+/* Content area */
+.content {
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 15px;
+    margin-top: 87px;
+    margin-bottom: 70px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.content p {
+    margin-bottom: 0px;
+}
+/* Button  */
+.button {
+    display: inline-block;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    /*background-image: linear-gradient(#1c41dd, #151490);
+    background-image: -moz-linear-gradient(#1c41dd, #151490); 
+    background-image: -webkit-linear-gradient(#1c41dd, #151490);*/
+    background: #6CF;
+    text-decoration: none;
+    color: #000;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.button:hover {
+    /*background-image: linear-gradient(#151490, #1c41dd);
+    background-image: -moz-linear-gradient(#151490, #1c41dd); 
+    background-image: -webkit-linear-gradien(#151490, #1c41dd);*/
+    background: #00B8E6;
+    -moz-box-shadow: 3px 3px 3px #00728E inset;
+    -webkit-box-shadow: 3px 3px 3px #00728E inset;
+    box-shadow: 3px 3px 3px #00728E inset;
+}
+/* General-use container to give a centered display */
+.container {
+    width: 69.681145366938471941910681986657%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Outer navbar (outside the main navbar container) */
+.navbar {
+    height: 40px;
+    background: black;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 27px;
+}
+/* Inner navbar */
+.nav {
+    padding: 0;
+    margin: 0;
+    background: black;
+    height: 40px;
+    display: inline;
+    position: relative;
+}
+/* Each individual navbar item */
+.nav > li {
+    display: inline-block;
+    height: 40px;
+}
+.nav li:hover {
+    background-color: #343533;
+}
+/* Navbar list floated to right */
+.rightnav {
+    padding: 0;
+    margin: 0;
+    background: black;
+    height:40px;
+    display: inline;
+}
+.rightnav > li {
+    display: inline-block;
+    float: right;
+    height: 40px;
+    cursor: pointer;
+}
+.rightnav li:hover {
+    background-color: #343533;
+}
+/* Makes hovered list item white */
+.nav li > a:hover, .rightnav li > a:hover {
+    color: white;
+}
+/* Defines list item link */
+.nav li a, .rightnav li a {
+    text-decoration: none;
+    color: #a9a6a6;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    line-height: 20px;
+}
+/* VITAL SUB-MENU FUNCTION: Makes hovered sub-menu display when list item is hovered */
+.nav li:hover > ul {
+    display: block;
+    float: none;
+    position: absolute;
+}
+/* Sub-menu */
+.nav li ul {
+    background-color: black;
+    display: none;
+    padding-left: 0px;
+    list-style-type: none;
+    margin-top: 0px;
+    padding: 0px;
+    min-width: 100px;
+    position: absolute;
+}
+/* Sub-menu list item */
+.nav li ul li {
+    display: block;
+    float: none;
+    position: relative;
+    border-left: 3px solid #6CF;
+}
+/* Sub-sub menu */
+.nav li ul li ul {
+    left: 100%;
+    top: 0;
+    margin: 0px;
+}
+/* Sub menu link & hovered link */
+.nav li ul li a {
+    padding-top: 10px;
+}
+.nav li ul li:hover > a {
+    color: white;
+}
+.nav li ul li:hover {
+    border-left: 3px solid yellow;
+} 
+
+/* Footer 'div' */
+.footer {
+    background-color: #c5c5c5;
+    bottom: 0;
+    margin-bottom: 0px;
+    width: 100%;
+    min-height: 50px;
+    position: relative;
+    padding-top: 5px;
+}
+/* Div containing text in footer */
+.footer .container div {
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+/* Buttons that slide to display text */
+.slidingbutton {
+    display: block;
+    height: 100px;
+    width: 50%;
+    overflow: hidden;
+    background-color: #D11;
+    text-decoration: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center; 
+    display: block;
+}
+/* First text area of button */
+.slidingbutton h6 {
+    color: #fff;
+    margin: 0px;
+    padding: 0px;
+    font-size: 150%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px black;
+    line-height: 100px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    opacity: 1;
+}
+/* Makes first text display area move up when hovered */
+.slidingbutton:hover h6 {
+    margin-top: -100px;
+    opacity: 0;
+}
+/* Second text area of button */
+.slidingbutton div {
+    color: white;
+    background: black;
+    line-height: 100px;
+    height: 100px;
+    text-transform: uppercase;
+    line-height: 100px;
+    font-size: 150%;
+}
+/* Fixed Sidebar */
+.sidebar {
+    width: 10%;
+    background: #000; 
+    position: fixed;
+    right: 0.75%;
+    border-radius: 10px;
+    padding: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    overflow: hidden;
+    color: white;
+    top: 88px
+}
+/* Sidebar title text */
+.sidebar p {
+    margin: 0px;
+    font-weight: bold;
+    text-align: center;
+}
+.sidebar:hover p {
+    color: #6CF;
+}
+/* Clears padding */
+.sidebar ul {
+    padding: 0px;
+}
+/* Sidebar list item */
+.sidebar ul li {
+    list-style: none;
+    border-left: 3px solid #6CF;
+    padding-left: 5px;
+}
+/* Sidebar list item link */
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Changes list item border color when hovered */
+.sidebar ul li:hover {
+    border-left: 3px solid yellow;
+}
+/* When sidebar list item is hovered, make it pop out to the right */
+.sidebar ul li:hover a{
+    margin-left: 5px;
+    color: #6CF;
+}
+/* SubHeading - clears top margin */
+.subHeading {
+    padding-top: 80px;
+}
+/* Main page title */
+#maintitle {
+    display: inline-block;
+    margin-bottom: 0px;
+}
+/* Title subtext and links */
+#titlesubtext {
+    display: inline-block;
+    color: gray;
+    margin-top: 0px;
+}
+#titlesubtext a {
+    text-decoration: none;
+    color: #6CF;
+}
+#titlesubtext a:hover {
+    color: #3333CC;
+    background-color: #c5c5c5;
+    border-radius: 2px;
+    padding: 2px;
+}
+/* Updates marquee at very top of page */
+.updates {
+    background: #F2C7C7;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    margin: auto;
+    height: 27px;
+}
+.closeupdatesbutton img {
+    height: 26px;
+    width: 26px;
+    float: right;
+}
+.mobiletopbar {
+    display: none;
+    background: black;
+    top: 0px;
+}
+.mobiletopbar a {
+    float: right;
+    height: 24px;
+    width: 24px;
+    background: white;
+    margin: 1px;
+    border-radius: 5px;
+}
+.mobiletopbar a img {
+    height: 24px;
+    width: 24px;
+}
+.mobiletopbar img:hover {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.mobiletopbar h3 {
+    color: white;
+    display: inline;
+}
+.contentextendedmargin {
+    margin-top: 180px !important;
+}
+/* Hidden paragraph show & hide */
+#show { cursor: pointer; }
+#hide { cursor: pointer; }
+/* Helper Classes */
+.right { text-align: right; }
+.left { text-align: left; }
+.center { text-align: center; }
+
+@media screen and (max-width: 940px) {
+    /* Increases actual page-reading space */
+    .container{
+        width: 90%;
+    }
+    /* Adds a less interesting background */
+    html {
+        background: url(../assets/ticks.png);
+    }
+    /* Hides the sidebar from taking up too much display space */
+    .sidebar {
+        display: none;
+    }
+    /* Decreases unneeded background image space from bottom of site */
+    #wrapper {
+        margin-bottom: -30px;
+    }
+    /* Makes the 'toggle sidebar' button go away */
+    .rightnav li:nth-child(1) {
+        display: none;
+    }
+    /* Removes fix for sidebar "#heading1" navigation */
+    .subHeading {
+        padding-top: 0px;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .mobiletopbar { display: block; }
+    .navbar {
+        display: none;
+    }
+    .updates {
+        display: none;
+    }
+    .navbar {
+        top: 26px;
+    }
+    .content {
+        margin-top: 60px
+    }
+    .sidebar {
+        top: 60px;
+    }
+    .nav li {
+        display: block;
+    }
+    .nav li a, .rightnav li a {
+        text-align: center;
+    }
+    .nav > li, .rightnav > li {
+        border-radius: 3px;
+    }
+    .navbar {
+        height: 160px;
+        position: absolute;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .content {
+        margin-top: 10px;
+    }
+    .rightnav li {
+        display: block;
+        float: none;
+    }
+    .nav li ul {
+        display: none !important;
+    }
+    input {
+        width: 90%;
+    }
+}

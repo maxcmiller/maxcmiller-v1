@@ -1,0 +1,21 @@
+@media screen and (max-width: 575px) {
+	.container {
+		width: 100%;
+	}
+	.content {
+		border-left: 0px;
+		border-right: 0px;
+		border-radius: 0px;
+		padding: 0px;
+	}
+	.header {
+		width: 80%;
+	}
+}
+@media screen and (max-width: 340px) {
+	.header {
+		width: 100%;
+		border: 0px;
+		border-bottom: 3px solid orange;
+	}
+}

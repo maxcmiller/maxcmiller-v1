@@ -1,0 +1,144 @@
+body {
+	padding:0px;
+	margin:0px;
+}
+html {
+	background: url(../assets/creampaper.png);
+	font-family: 'Noto Sans';
+}
+.container {
+	width: 69%;
+	margin: auto;
+}
+.content {
+	margin-top: 30px;
+	display:block;
+	background: white;
+	border-radius: 5px;
+	padding: 10px;
+	border: 3px solid black;
+}
+.header {
+	display:block;
+	width: 69%;
+	height: 80px;
+	margin:auto;
+	padding-left: 10px;
+	padding-right:10px;
+	padding-bottom: 5px;
+	background: white;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius:5px;
+	border: 3px solid orange;
+	border-top: 0px;
+}
+.navbar {
+	height: 30px;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#575655), to(black));
+    background-image: -webkit-linear-gradient(top, #575655, black); 
+    background-image: -moz-linear-gradient(top, #575655, black);
+    background-image: -ms-linear-gradient(top, #575655, black);
+    background-image: -o-linear-gradient(top, #575655, black);
+	border-radius:3px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	position: absolute;
+	top: 65px;
+	width: 69%;
+}
+.navbar ul {
+	padding: 0px;
+	margin:0px;
+}
+.navbar ul li {
+	list-style: none;
+	height: 30px;
+	float: left;
+	display:block;
+	cursor: pointer;
+}
+.navbar ul li:hover {
+	border-radius: 2px;
+	background: #F60;
+}
+.navbar ul li:hover a {
+	color: black;
+}
+.navbar ul li a {
+	text-decoration: none;
+	color: white;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 20px;
+}
+.navbar > ul li:first-child {
+	margin-left: 3px;
+}
+.rightnav li {
+	margin-left: 0px;
+}
+.rightnav li:last-child {
+	margin-right: 3px;
+}
+.headerlogo {
+	color: black;
+	font-size: 30px;
+}
+.headerlogoemphasis {
+	font-size:40px;
+}
+.rightnav {
+	float: right;
+	height:30px;
+}
+.sidebarsocial {
+	position: fixed;
+	right: 10px;
+	height: 128px;
+	width: 32px;
+	background: white;
+	border: 2px solid #c5c5c5;
+	top: 100px;
+	border-radius: 5px;
+}
+.footer {
+	height: 50px;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#575655), to(black));
+    background-image: -webkit-linear-gradient(top, #575655, black); 
+    background-image: -moz-linear-gradient(top, #575655, black);
+    background-image: -ms-linear-gradient(top, #575655, black);
+    background-image: -o-linear-gradient(top, #575655, black);
+	margin: auto;
+	padding-left:10px;
+	padding-right: 10px;
+	margin-top: 40px;
+	border-top: 3px solid orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

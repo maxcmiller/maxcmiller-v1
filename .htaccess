@@ -1,0 +1,9 @@
+RewriteEngine on
+Redirect 302 /brodie http://maxcmiller.com/family/brodie
+Redirect 302 /david http://maxcmiller.com/family/david
+Redirect 302 /kate http://maxcmiller.com/family/kate
+Redirect 302 /pets http://maxcmiller.com/family/pets
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} !^maxcmiller\.com
+RewriteRule (.*) http://maxcmiller.com/$1 [R=301,L]
