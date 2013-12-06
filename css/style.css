@@ -385,15 +385,11 @@ html {
     background: white;
     margin: 1px;
     border-radius: 5px;
+    background-image: url(http://maxcmiller.com/assets/gear.png);
+    background-size: cover;
 }
-.mobiletopbar a img {
-    height: 24px;
-    width: 24px;
-}
-.mobiletopbar img:hover {
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+.mobiletopbar a:hover {
+    background-image: url(http://maxcmiller.com/assets/gear_white.png);
 }
 .mobiletopbar h3 {
     color: white;
