@@ -389,7 +389,9 @@ html {
     background-size: cover;
 }
 .mobiletopbar a:hover {
+    background: black;
     background-image: url(http://maxcmiller.com/assets/gear_white.png);
+    background-size: cover;
 }
 .mobiletopbar h3 {
     color: white;
